@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
+
+/**
  * main - Entry point
  *
- * Description - Checks number if it is positive or negative
+ * Description: Checks number if it is positive or negative
  *
  * Return: Always 0 (Success)
  */
 
-/*This block of code checks if a number is positive or negative*/
-int main(void)
+int main(void)/*main - Entry point*/
 {
 	int n;
 
