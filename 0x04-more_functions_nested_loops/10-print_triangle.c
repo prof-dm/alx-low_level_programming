@@ -1,16 +1,32 @@
 #include "main.h"
+
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_triangle - check for a digit
+ * @size : integer type
+ * Return:void
  */
 
-int main(void)
+void print_triangle(int size)
 {
-	print_triangle(2);
-	print_triangle(10);
-	print_triangle(1);
-	print_triangle(0);
+	int i = 1, ii;
 
-	return (0);
+	while (i <= size && size > 0)
+	{
+		ii = 0;
+		while (ii < size - i)
+		{
+			_putchar(' ');
+			ii++;
+		}
+		ii = 0;
+		while (ii < i)
+		{
+			_putchar('#');
+			i++;
+		}
+		_putchar('\n');
+		i++;
+	}
+	if (i == 1)
+		_putchar('\n');
 }
